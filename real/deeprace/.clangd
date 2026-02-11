@@ -1,0 +1,9 @@
+CompileFlags:
+  Add:
+    - --target=xtensa
+    # - -mlong-calls
+  Remove:
+    - -mlongcalls
+    - -mlong-calls
+    - -fstrict-volatile-bitfields
+    - -fno-tree-switch-conversion
