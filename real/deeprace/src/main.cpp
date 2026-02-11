@@ -11,8 +11,6 @@ ICM42688 IMU(Wire, IMU_ADDR, SDA_PIN, SCL_PIN);
 
 const char *WIFI_SSID = "ssid";
 const char *WIFI_PASS = "pass";
-// const char *WIFI_SSID = "ssid";
-// const char *WIFI_PASS = "pass";
 
 static constexpr uint16_t IMU_PORT_TX = 9000; // ESP32 -> PC
 static constexpr uint16_t CMD_PORT_RX = 9001; // PC -> ESP32
