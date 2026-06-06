@@ -96,7 +96,6 @@ class TapeLineFollowEnv(gym.Env):
         self.progress_eps = 0.005
         self.stall_limit = int(1.5 / self.dt)
 
-        # --- noise: removed accel ---
         if sensor_noise is None:
             sensor_noise = {
                 "e_y": 0.003,
@@ -120,7 +119,6 @@ class TapeLineFollowEnv(gym.Env):
         self.action_space: spaces.Discrete = spaces.Discrete(
             len(self.action_table))
 
-        # --- observation: now 3D (e_y, kappa, yaw_rate) ---
         ey_max = self.track_width * 2.0
         self.observation_space: spaces.Box = spaces.Box(
             low=np.array([-ey_max, -3.0, -20.0], dtype=np.float32),

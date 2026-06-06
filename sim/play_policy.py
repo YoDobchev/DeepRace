@@ -7,7 +7,7 @@ from pathlib import Path
 from stable_baselines3 import DQN
 
 
-def main() -> None:
+def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--model", type=str, required=True, help="Path to .zip model (e.g. runs/track_dqn/best_model/best_model.zip)")
     ap.add_argument("--episodes", type=int, default=10)

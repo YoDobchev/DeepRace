@@ -1,4 +1,3 @@
-# train_dqn.py
 from __future__ import annotations
 
 import argparse
@@ -15,7 +14,6 @@ from stable_baselines3.common.utils import set_random_seed
 
 def make_env(seed: int, render: str | None = None):
     from track_follow_env import TapeLineFollowEnv
-    # from track_follow_env_real import TapeLineFollowEnvRealistic
 
     env = TapeLineFollowEnv(render_mode=render, seed=seed)
     return env

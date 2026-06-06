@@ -222,28 +222,3 @@ bool readCommandUDP(float &left, float &right) {
   }
   return false;
 }
-
-// #include <Arduino.h>
-
-// static constexpr int AIN1 = 16; // change to the pins you wired
-// static constexpr int AIN2 = 17;
-
-// void setup() {
-//   pinMode(AIN1, OUTPUT);
-//   pinMode(AIN2, OUTPUT);
-
-//   // full forward for 2 seconds
-
-// }
-
-// void loop() {
-
-//   digitalWrite(AIN1, LOW);
-//   digitalWrite(AIN2, HIGH);
-//   delay(2000);
-
-//   // stop
-//   digitalWrite(AIN1, LOW);
-//   digitalWrite(AIN2, LOW);
-//   delay(2000);
-// }
